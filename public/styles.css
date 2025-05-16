@@ -50,6 +50,7 @@ nav ul li a {
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 20px auto;
     position: relative;
 }
