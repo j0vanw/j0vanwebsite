@@ -51,6 +51,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
+    position: relative;
 }
 
 /* Footer */
