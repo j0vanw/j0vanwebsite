@@ -1,3 +1,3 @@
 // main.js
 import './style.css';      // Optional, for your global styles
-import './initAuth';    // ✅ Loads your Firebase login/logout logic
+import '/src/initAuth.js';    // ✅ Loads your Firebase login/logout logic
