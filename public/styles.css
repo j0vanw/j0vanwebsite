@@ -22,21 +22,21 @@ header {
 
 /* Navigation Menu - Flexbox for alignment */
 nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px 0;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
+    text-decoration: none;
+    margin: 0 0.75em 0 0.75em;
 }
 
 nav ul li a {
-    color: black;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    text-transform:none;
+    transition: 0.25s ease;
 }
 
 /* Main Content */
@@ -91,24 +91,6 @@ footer {
     }
 }
 
-/* Layout the main nav horizontally */
-.main-nav {
-    position: relative;
-    display: flex;
-    justify-content: center; /* Center the main links */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
-  }
-  
-  /* Center nav */
-  .nav-center {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
   
   /* Right-side auth nav */
   .nav-right {
@@ -124,7 +106,7 @@ footer {
   }
   
   /* Style links and buttons */
-  .main-nav a, .main-nav button {
+  a, button {
     text-decoration: none;
     font-size: 1rem;
     color: #333;
@@ -133,10 +115,14 @@ footer {
     cursor: pointer;
   }
   
-  .main-nav a:hover,
-  .main-nav button:hover {
-    color: rgb(0, 255, 255);
-  }
+    ul:hover a {
+        color: #575757;
+    }
+
+    ul:hover a:hover {
+        color:#8EAAFB;
+        box-shadow: 0 2px 0 0 currentColor;
+    }
 
   header {
     position: sticky;
