@@ -44,7 +44,7 @@ nav ul li a {
     display: flex;
     width: 400px;
     height: 400px;
-    background: #a6a09b;
+    background: #79716b;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -59,7 +59,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background: #364153;
+    background: #79716b;
     color: white;
 }
 
@@ -133,7 +133,7 @@ footer {
   header {
     position: sticky;
     top: 0;
-    background-color: #364153;
+    background-color: #79716b;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
