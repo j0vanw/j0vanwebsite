@@ -38,7 +38,7 @@
             box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
             z-index: 1001;
         }
-        .cart-open {
+        .cart.cart-open {
             display: flex;
         }
         .cart-item {
@@ -152,7 +152,7 @@
 
         function toggleCart() {
             const cartEl = document.getElementById("cart");
-            cartEl.classList.toggle("open");
+            cartEl.classList.toggle("cart-open");
         }
         async function checkoutStripe() {
             const response = await fectch("/.netlify/functions/create-chyeckout", {
