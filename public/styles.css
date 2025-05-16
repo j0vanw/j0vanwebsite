@@ -43,7 +43,7 @@ nav ul li a {
 main {
     max-width: 800px;
     margin: 20px auto;
-    background: white;
+    background: #5A5A5A;
     padding: 20px;
     border-radius: 10px;
 }
@@ -53,7 +53,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background: black;
+    background: #5A5A5A;
     color: white;
 }
 
