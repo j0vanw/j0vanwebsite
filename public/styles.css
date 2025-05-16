@@ -44,7 +44,7 @@ nav ul li a {
     display: flex;
     width: 400px;
     height: 400px;
-    background: #101828;
+    background: #364153;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -59,7 +59,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background: #101828;
+    background: #364153;
     color: white;
 }
 
