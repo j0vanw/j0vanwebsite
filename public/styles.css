@@ -43,7 +43,7 @@ nav ul li a {
 /* Main Content */
 .card1{
     display: flex;
-    width: 800px;
+    width: 400px;
     height: 400px;
     background: black;
     padding: 20px;
