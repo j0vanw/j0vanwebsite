@@ -8,7 +8,7 @@
 
 /* Body Styling */
 body {
-    background-color: #79716b;
+    background-color: #080907;
     color: white;
     line-height: 1.6;
 }
@@ -44,7 +44,7 @@ nav ul li a {
     display: flex;
     width: 400px;
     height: 400px;
-    background: #a6a09b;
+    background: #363838;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -59,7 +59,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background: #79716b;
+    background: #363838;
     color: white;
 }
 
@@ -133,7 +133,7 @@ footer {
   header {
     position: sticky;
     top: 0;
-    background-color: #79716b;
+    background-color: #363838;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
