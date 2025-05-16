@@ -43,7 +43,8 @@ nav ul li a {
 /* Main Content */
 main section{
     display: flex;
-    max-width: 800px;
+    width: 200px;
+    height: 400px;
     margin: 20px auto;
     background: #101828;
     padding: 20px;
