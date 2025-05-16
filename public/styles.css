@@ -41,13 +41,14 @@ nav ul li a {
 }
 
 /* Main Content */
-main section{
+.card{
     display: flex;
     width: 800px;
     height: 400px;
     background: black;
     padding: 20px;
     border-radius: 10px;
+    align-items: center;
     margin: 20px auto;
 }
 
