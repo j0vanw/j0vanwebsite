@@ -41,7 +41,8 @@ nav ul li a {
 }
 
 /* Main Content */
-main {
+main section{
+    display: flex;
     max-width: 800px;
     margin: 20px auto;
     background: #101828;
