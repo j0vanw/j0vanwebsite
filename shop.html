@@ -152,7 +152,7 @@
 
         function toggleCart() {
             const cartEl = document.getElementById("cart");
-            cartEl.classlist.toggle("open");
+            cartEl.classList.toggle("open");
         }
         async function checkoutStripe() {
             const response = await fectch("/.netlify/functions/create-chyeckout", {
