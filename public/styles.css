@@ -45,7 +45,7 @@ main section{
     display: flex;
     width: 800px;
     height: 400px;
-    background: #101828;
+    background: white;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
