@@ -49,7 +49,7 @@ main section{
     padding: 20px;
     border-radius: 10px;
     align-items: center;
-    position: relative;
+    position: center;
 }
 
 /* Footer */
