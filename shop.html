@@ -154,21 +154,8 @@
             const cartEl = document.getElementById("cart");
             cartEl.classList.toggle("cart-open");
         }
-        async function checkoutStripe() {
-            const response = await fectch("/.netlify/functions/create-chyeckout", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(cart),
-            });
-
-            const data = await response.json();
-            if (data.url) {
-                window.location.href = data.url;
-            } else {
-                alert("Stripe checkout failed.");
-            }
+        function checkoutStripe() {
+            alert("Stripe checkout will be implemented soon");
         }
         function checkoutPayPal() {
             alert("PayPal checkout will be implemented next.");
