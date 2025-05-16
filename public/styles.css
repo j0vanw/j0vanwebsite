@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background: grey;
+    background: #5A5A5A;
     color: white;
     padding: 5px;
     text-align: center;
@@ -127,7 +127,7 @@ footer {
   header {
     position: sticky;
     top: 0;
-    background-color: grey;
+    background-color: #5A5A5A;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
