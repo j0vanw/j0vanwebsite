@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>j0vanw's website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="indexstyles.css">
 </head>
 <body>
-
     <header>
         <h1>Welcome to My Website.</h1>
-         
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,25 +16,23 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="shop.html">Shop</a></li>
             </ul>
-
-            <ul>
+            <ul class="nav-right">
                 <li><a href="login.html" id="login-link">Log In</a></li>
                 <li><a href="signup.html" id="signup-link">Sign Up</a></li>
-                <li> <button id="logout-btn" onclick="logout()" style="display: none;">Log Out</button> </li>
+                <li><button id="logout-btn" onclick="logout()" style="display: none;">Log Out</button></li>
                 <li><span id="user-email" style="display: none; font-weight: bold;"></span></li>
             </ul>
         </nav>
     </header>
+
     <main>
-    <div class="card1">Welcome, feel free to look around and test this website.</div>
+        <div class="card1">Welcome, feel free to look around and test this website.</div>
     </main>
 
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
     </footer>
-    
 
-<script type="module" src="src/main.js"></script>
-
+    <script type="module" src="src/main.js"></script>
 </body>
 </html>
