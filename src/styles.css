@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset Default Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,79 +6,45 @@
     font-family: Arial, sans-serif;
 }
 
-/* Base Styles */
+/* Body Styling */
 body {
-    color: #333;
+    background-color: #363838;
+    color: white;
     line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: white;
-    color: black;
+    color: white;
     padding: 5px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Main nav container */
-.main-nav {
+/* Navigation Menu - Flexbox for alignment */
+nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
     flex-wrap: wrap;
-    gap: 10px;
-}
-
-/* Center nav */
-.nav-center {
-    display: flex;
-    gap: 1.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-/* Right-side auth nav */
-.nav-right {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Links & Buttons */
-.main-nav a, .main-nav button {
+nav ul li {
     text-decoration: none;
-    font-size: 1rem;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
+    margin: 0 0.75em 0 0.75em;
 }
 
-.main-nav a:hover,
-.main-nav button:hover {
-    color: rgb(0, 255, 255);
-}
-
-/* Welcome Card */
-.card {
-    display: flex;
-    width: 800px;
-    height: 400px;
-    background: black;
+nav ul li a {
+    text-decoration: none;
     color: white;
+    text-transform:none;
+    transition: 0.25s ease;
+}
+
+/* Main Content */
+.card1{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background: #080907;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -93,47 +59,86 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background: black;
+    background: #363838;
     color: white;
 }
 
-/* Responsive */
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Mobile Screens (max-width: 600px) */
 @media (max-width: 600px) {
     body {
         padding: 10px;
     }
 
-    .main-nav {
+    /* Make navigation stack vertically */
+    nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
+        gap: 5px;
     }
 
-    .nav-center,
-    .nav-right {
-        position: static;
-        transform: none;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
+    /* Reduce main content width */
     main {
         max-width: 100%;
         padding: 15px;
     }
 
+    /* Adjust footer padding */
     footer {
         padding: 15px;
     }
 }
 
+/* Tablet Screens (max-width: 900px) */
 @media (max-width: 900px) {
     main {
         max-width: 90%;
     }
 }
 
-#user-email {
+  
+  /* Right-side auth nav */
+  .nav-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style links and buttons */
+  a, button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+    ul:hover a {
+        color: #575757;
+    }
+
+    ul:hover a:hover {
+        color:#8EAAFB;
+        box-shadow: 0 2px 0 0 currentColor;
+    }
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #7c7d7d;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  #user-email {
     color: #007BFF;
     font-size: 0.9rem;
-}
+  }
