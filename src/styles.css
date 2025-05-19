@@ -1,4 +1,4 @@
-/* Reset Default Styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,45 +6,79 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
+/* Base Styles */
 body {
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
 header {
-    background: rgba(255, 255, 255);
+    background-color: white;
     color: black;
     padding: 5px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Navigation Menu - Flexbox for alignment */
-nav ul {
-    list-style: none;
+/* Main nav container */
+.main-nav {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 10px 0;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-nav ul li {
-    display: inline;
+/* Center nav */
+.nav-center {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
-    color: black;
+/* Right-side auth nav */
+.nav-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links & Buttons */
+.main-nav a, .main-nav button {
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-/* Main Content */
-.card1{
+.main-nav a:hover,
+.main-nav button:hover {
+    color: rgb(0, 255, 255);
+}
+
+/* Welcome Card */
+.card {
     display: flex;
     width: 800px;
     height: 400px;
     background: black;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -63,98 +97,43 @@ footer {
     color: white;
 }
 
-/* ----- RESPONSIVE DESIGN ----- */
-
-/* Mobile Screens (max-width: 600px) */
+/* Responsive */
 @media (max-width: 600px) {
     body {
         padding: 10px;
     }
 
-    /* Make navigation stack vertically */
-    nav ul {
+    .main-nav {
         flex-direction: column;
-        text-align: center;
-        gap: 5px;
+        align-items: flex-start;
     }
 
-    /* Reduce main content width */
+    .nav-center,
+    .nav-right {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
     main {
         max-width: 100%;
         padding: 15px;
     }
 
-    /* Adjust footer padding */
     footer {
         padding: 15px;
     }
 }
 
-/* Tablet Screens (max-width: 900px) */
 @media (max-width: 900px) {
     main {
         max-width: 90%;
     }
 }
 
-/* Layout the main nav horizontally */
-.main-nav {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
-    flex-wrap: wrap; /* allows wrapping on smaller screens */
-    gap: 10px;
-  }
-  
-  /* Center nav */
-  .nav-center {
-     display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Right-side auth nav */
-  .nav-right {
-      position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-  
-  /* Style links and buttons */
-  .main-nav a, .main-nav button {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .main-nav a:hover,
-  .main-nav button:hover {
-    color: rgb(0, 255, 255);
-  }
-
-  header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  #user-email {
+#user-email {
     color: #007BFF;
     font-size: 0.9rem;
-  }
+}
