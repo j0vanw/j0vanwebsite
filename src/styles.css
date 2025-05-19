@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 /* Main Content */
-.card{
+.card1{
     display: flex;
     width: 800px;
     height: 400px;
@@ -99,17 +99,19 @@ footer {
 
 /* Layout the main nav horizontally */
 .main-nav {
-    position: relative;
-    display: flex;
-    justify-content: center; /* Center the main links */
+     display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
     padding: 10px 20px;
     background-color: #f4f4f4;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    gap: 10px;
   }
   
   /* Center nav */
   .nav-center {
-    display: flex;
+     display: flex;
     gap: 1.5rem;
     list-style: none;
     margin: 0;
@@ -118,7 +120,7 @@ footer {
   
   /* Right-side auth nav */
   .nav-right {
-    position: absolute;
+      position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
@@ -127,7 +129,7 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
   
   /* Style links and buttons */
   .main-nav a, .main-nav button {
